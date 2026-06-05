@@ -133,3 +133,42 @@ set_omiga(6.28f, 6.28f);  // 两轮均以 1 rev/s 转动
 - 新增 8 路灰度传感器支持
 - 圈数选择改为 2 位二进制编码（支持 1~3 圈）
 - 修复任务 2 角度参数
+
+## 引脚分配
+
+| 引脚 | 功能 | 外设/说明 |
+|------|------|-----------|
+| PA7 | 圈数选择 bit0 | GPIO (上拉) |
+| PA12 | 电机0 方向 AIN2 | GPIO |
+| PA13 | 电机0 方向 AIN1 | GPIO |
+| PA14 | 灰度传感器 S5 | GPIO |
+| PA15 | 电机0 编码器 B1 | GPIO (方向判断) |
+| PA16 | 电机0 编码器 A1 | GPIO (脉冲计数, 双边沿中断) |
+| PA17 | 电机1 编码器 B2 | GPIO (方向判断) |
+| PA19 | SWDIO | DEBUGSS (调试接口) |
+| PA20 | SWCLK | DEBUGSS (调试接口) |
+| PA21 | 圈数选择 bit1 | GPIO (上拉) |
+| PA24 | 灰度传感器 S1 | GPIO |
+| PA25 | 按键 P1 | GPIO (上拉, 下降沿中断) |
+| PA26 | 按键 P2 | GPIO (上拉, 下降沿中断) |
+| PA27 | 任务选择 bit2 | GPIO (下拉) |
+| PA28 | 任务选择 bit1 | GPIO (下拉) |
+| PA30 | 灰度传感器 S8 | GPIO |
+| PA31 | 任务选择 bit0 | GPIO (下拉) |
+| PB0 | 电机1 方向 BIN1 | GPIO |
+| PB1 | 电机1 PWM | TIMA1 CCP1 |
+| PB2 | IMU UART TX | UART3 |
+| PB3 | IMU UART RX | UART3 |
+| PB4 | 电机0 PWM | TIMA1 CCP0 |
+| PB6 | VOFA UART TX | UART1 |
+| PB7 | VOFA UART RX | UART1 |
+| PB8 | 电机1 方向 BIN2 | GPIO |
+| PB9 | 电机1 编码器 A2 | GPIO (脉冲计数, 双边沿中断) |
+| PB11 | 状态 LED | GPIO (下拉, 初始置高) |
+| PB17 | 蜂鸣器 | GPIO (下拉) |
+| PB18 | 灰度传感器 S6 | GPIO |
+| PB19 | 灰度传感器 S7 | GPIO |
+| PB20 | 灰度传感器 S4 | GPIO |
+| PB22 | 调试 LED | GPIO |
+| PB24 | 灰度传感器 S3 | GPIO |
+| PB25 | 灰度传感器 S2 | GPIO |
