@@ -1,0 +1,60 @@
+# ======================================
+# CCS / Code Composer Studio 自动忽略文件
+# ======================================
+
+# 1. 编译输出目录（最重要！）
+Debug/
+Release/
+bin/
+build/
+Generated_Code/
+CMakeFiles/
+cmake-build-*/
+
+# 2. CCS 自动生成的工程文件
+*.pjt
+*.paf
+*.ldk
+*.cfg
+*.cproject
+*.project
+*.launches
+*.launch
+.settings/
+.cproject
+.project
+
+# 3. 编译中间文件
+*.o
+*.obj
+*.d
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.out
+*.lib
+*.a
+
+# 4. 调试 / 日志文件
+*.log
+*.bak
+*.tmp
+*.swp
+ccs-core/
+.ccs/
+.metadata/
+
+# 5. 仿真器 / 调试配置
+*.ccxml
+*.cddiag
+*.cddbg
+
+# 6. 系统自动生成文件（Windows/Mac）
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.user
